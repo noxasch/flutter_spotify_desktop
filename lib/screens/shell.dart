@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../data/data.dart';
+import '../screens/screens.dart';
 import '../widgets/widgets.dart';
 
 class Shell extends StatelessWidget {
@@ -9,6 +11,9 @@ class Shell extends StatelessWidget {
         Expanded(child: Row(
           children: [
             SideMenu(),
+            const Expanded(
+              child: PlaylistScreen(playlist: lofihiphopPlaylist,)
+            )
             // Playlist screen
           ],
         )),
