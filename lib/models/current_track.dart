@@ -1,11 +1,11 @@
 import './models.dart';
 
-class CurrentTrack {
+class CurrentTrackModel {
   final Song? selectedSong;
 
-  CurrentTrack({this.selectedSong});
+  CurrentTrackModel({this.selectedSong});
 
-  CurrentTrack copyWith({selectedSong}) {
-    return CurrentTrack(selectedSong: selectedSong);
+  CurrentTrackModel copyWith({selectedSong}) {
+    return CurrentTrackModel(selectedSong: selectedSong);
   }
 }

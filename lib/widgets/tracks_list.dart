@@ -17,7 +17,7 @@ class TracksList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer(
       builder: (context, watch, child) {
-        final CurrentTrack currentTrack = watch(currentTrackProvider);
+        final CurrentTrackModel currentTrack = watch(currentTrackProvider);
         return DataTable(
           headingTextStyle: Theme.of(context).textTheme.overline!.copyWith(
             fontSize: 12.0
