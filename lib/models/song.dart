@@ -1,5 +1,7 @@
 
+import 'package:flutter/foundation.dart';
 
+@immutable
 class Song {
   final String id;
   final String title;
@@ -14,4 +16,13 @@ class Song {
     required this.album,
     required this.duration,
   });
+
+  Song copyWith({id, title, artist, album, duration}) {
+    return Song(
+      id: id ?? this.id, 
+      title: title ?? this.title, 
+      artist: artist ?? this.artist, 
+      album: album ?? this.album, 
+      duration: album ?? this.album, );
+  }
 }
